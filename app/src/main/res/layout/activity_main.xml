@@ -21,6 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
             android:text="Basket APP"
             android:textAlignment="center"
             android:textSize="34sp"
@@ -33,7 +35,9 @@
             android:ems="10"
             android:hint="Team 1"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:paddingBottom="20dp"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/etTeam2"
@@ -42,7 +46,9 @@
             android:ems="10"
             android:hint="Team 2"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btnStartMatch"
@@ -52,8 +58,10 @@
             android:backgroundTint="@android:color/holo_blue_dark"
             android:fontFamily="sans-serif-black"
             android:gravity="center|center_horizontal"
+            android:onClick="loadMatch"
             android:text="START MATCH"
             android:textAlignment="center"
+            android:textSize="20sp"
             app:icon="@android:drawable/btn_star_big_on" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
