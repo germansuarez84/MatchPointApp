@@ -148,5 +148,18 @@
                 app:icon="@android:drawable/btn_star_big_on" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnStartMatch"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|center_horizontal"
+            android:onClick="loadWinner"
+            android:text="WINNER"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:icon="@android:drawable/btn_star_big_on" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

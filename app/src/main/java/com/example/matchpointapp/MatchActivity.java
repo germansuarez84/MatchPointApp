@@ -51,4 +51,30 @@ public class MatchActivity extends AppCompatActivity {
             addVisitorPoints(Integer.valueOf(parameters[1]));
 
     }
+
+    public void sumPoint(View view){
+        String [] parameters = view.getTag().toString().split("-");
+
+        if(parameters[0].equals("0"))
+            addHomePoints(Integer.valueOf(parameters[1]));
+        else
+            addVisitorPoints(Integer.valueOf(parameters[1]));
+
+    }
+
+    public void loadWinner(View view){
+        //Toast.makeText(this,"Hola", Toast.LENGTH_SHORT).show();
+        //team1=new Team(etTeam1.getText().toString());
+        //team2= new Team(etTeam2.getText().toString());
+        //int sum = team1.sumPoint();
+        //int sum2 = team2.sumPoint();
+
+        Intent mainActivity = new Intent(this, MainActivity.class);
+        //matchActivity.putExtra("team1",team1);
+        //matchActivity.putExtra("team2",team2);
+        //loadWinner.putExtra("sum",sum);
+        //loadWinner.putExtra("sum2",sum2);
+
+        startActivity(mainActivity);
+    }
 }
