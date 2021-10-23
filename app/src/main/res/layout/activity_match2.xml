@@ -157,7 +157,7 @@
             android:fontFamily="sans-serif-black"
             android:gravity="center|center_horizontal"
             android:onClick="loadWinner"
-            android:text="WINNER"
+            android:text="NEW PLAY"
             android:textAlignment="center"
             android:textSize="20sp"
             app:icon="@android:drawable/btn_star_big_on" />
