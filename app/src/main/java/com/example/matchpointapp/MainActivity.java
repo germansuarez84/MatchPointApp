@@ -25,12 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadMatch(View view){
         //Toast.makeText(this,"Hola", Toast.LENGTH_SHORT).show();
-        team1=new Team(etTeam1.getText().toString());
-        team2= new Team(etTeam2.getText().toString());
-        Intent matchActivity = new Intent(this, MatchActivity.class);
-        matchActivity.putExtra("team1",team1);
-        matchActivity.putExtra("team2",team2);
+        if(etTeam1.getText().toString().length()==0)
+            Toast.makeText(this,getString(R.string.HomeValidator), Toast.LENGTH_SHORT).show();
+        else if(etTeam2.getText().toString().length()==0)
+                Toast.makeText(this,getString(R.string.VisitorValidator), Toast.LENGTH_SHORT).show();
+                    else
+                        {
+                            team1=new Team(etTeam1.getText().toString());
+                            team2= new Team(etTeam2.getText().toString());
+                            Intent matchActivity = new Intent(this, MatchActivity.class);
+                            matchActivity.putExtra("team1",team1);
+                            matchActivity.putExtra("team2",team2);
 
-        startActivity(matchActivity);
+                            startActivity(matchActivity);
+                        }
+
     }
 }

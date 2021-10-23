@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MatchPointApp</string>
+    <string name="HomeValidator">Por favor digite el nombre del equipo local</string>
+    <string name="VisitorValidator">Por favor digite el nombre del equipo visitante</string>
+    <string name="HomeName">Equipo local</string>
+    <string name="VisitorName">Equipo visitante</string>
 </resources>
