@@ -4,4 +4,9 @@
     <string name="VisitorValidator">Por favor digite el nombre del equipo visitante</string>
     <string name="HomeName">Equipo local</string>
     <string name="VisitorName">Equipo visitante</string>
+    <string name="NewMatch">Nuevo partido</string>
+    <string name="EndGame">Terminar partido</string>
+    <string name="HomeWinner">Equipo local ganador</string>
+    <string name="VisitorWinner">Equipo visitante ganador</string>
+    <string name="TiedMatch">Partido empatado</string>
 </resources>

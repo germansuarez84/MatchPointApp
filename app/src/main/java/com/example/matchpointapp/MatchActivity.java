@@ -6,13 +6,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.matchpointapp.entity.Team;
 
 public class MatchActivity extends AppCompatActivity {
     private Team team1, team2;
     private TextView tvTeam1, tvTeam2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,5 +79,16 @@ public class MatchActivity extends AppCompatActivity {
         //loadWinner.putExtra("sum2",sum2);
 
         startActivity(mainActivity);
+    }
+
+    public void endGame(View view){
+        if(team1.getPoints()>team2.getPoints())
+            Toast.makeText(this,getString(R.string.HomeWinner), Toast.LENGTH_SHORT).show();
+        else if(team2.getPoints()>team1.getPoints())
+            Toast.makeText(this,getString(R.string.VisitorWinner), Toast.LENGTH_SHORT).show();
+              else
+                    Toast.makeText(this,getString(R.string.TiedMatch), Toast.LENGTH_SHORT).show();
+
+
     }
 }
