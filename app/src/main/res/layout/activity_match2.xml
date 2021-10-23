@@ -23,7 +23,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingTop="10dp"
             android:paddingBottom="20dp"
-            android:text="Basket APP"
+            android:text="@string/AppTitle"
             android:textAlignment="center"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -171,7 +171,7 @@
             android:backgroundTint="@android:color/holo_blue_dark"
             android:fontFamily="sans-serif-black"
             android:gravity="center|center_horizontal"
-            android:onClick="loadWinner"
+            android:onClick="NewMatch"
             android:text="@string/NewMatch"
             android:textAlignment="center"
             android:textSize="20sp"

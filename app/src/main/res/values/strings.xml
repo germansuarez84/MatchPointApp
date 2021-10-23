@@ -9,4 +9,6 @@
     <string name="HomeWinner">Equipo local ganador</string>
     <string name="VisitorWinner">Equipo visitante ganador</string>
     <string name="TiedMatch">Partido empatado</string>
+    <string name="AppTitle">Partido de Basketball</string>
+    <string name="StartGame">Empezar partido</string>
 </resources>
